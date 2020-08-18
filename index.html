@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <title>Slideshow</title>
+
+        <link rel="stylesheet" href="style.css">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    </head>
+
+    <body>
+
+        <header>JavaScript Slideshow</header>
+
+        <main>
+
+            <article id="slideshow">
+
+                <!--Pictures-->
+
+                <div class="image fade">
+                    <div class="numbers">1 / 6</div>
+                    <img src="Images/pic1.jpg" alt="Picture 1" title="First picture">
+                </div>
+
+                <div class="image fade">
+                    <div class="numbers">2 / 6</div>
+                    <img src="Images/pic2.jpg" alt="Picture 2" title="Second picture">
+                </div>
+
+                <div class="image fade">
+                    <div class="numbers">3 / 6</div>
+                    <img src="Images/pic3.jpg" alt="Picture 3" title="Third picture">
+                </div>
+
+                <div class="image fade">
+                    <div class="numbers">4 / 6</div>
+                    <img src="Images/pic4.jpg" alt="Picture 4" title="Fourth picture">
+                </div>
+
+                <div class="image fade">
+                    <div class="numbers">5 / 6</div>
+                    <img src="Images/pic5.jpg" alt="Picture 5" title="Fifth picture">
+                </div>
+
+                <div class="image fade">
+                    <div class="numbers">6 / 6</div>
+                    <img src="Images/pic6.jpg" alt="Picture 6" title="Sixth picture">
+                </div>
+
+                <!--Dots as indicators-->
+
+                <div id="dots">
+
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                    <span class="dot" onclick="currentSlide(6)"></span>
+
+                </div>
+
+                <button title="Next" id="next" onclick="changeSlide(1)">&#10095;</button>
+                <button title="Previous" id="previous" onclick="changeSlide(-1)">&#10094;</button>
+
+            </article>
+
+            <script src="main.js"></script>
+
+        </main>
+
+        <footer>Author: Caner Kaya</footer>
+
+    </body>
+
+</html>
